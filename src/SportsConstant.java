@@ -12,6 +12,7 @@ public class SportsConstant {
 		public static final boolean TOUCH_DOWN = true;
 		public static final double GAME_LENGTH = 60;
 		
+		
 		//Soccer Constants
 		public static final int GOAL_VALUE = 1;
 		public static final double GAME_TIME = 90.00;
