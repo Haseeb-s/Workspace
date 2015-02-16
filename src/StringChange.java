@@ -18,6 +18,7 @@ public class StringChange {
 		System.out.println(sample.replace("I", "X"));
 		System.out.println(sample.substring(9));
 		System.out.println(sample.substring(0,6));
+		
 		System.out.println(sample.trim());
 	}
 
