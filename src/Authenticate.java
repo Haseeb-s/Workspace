@@ -24,9 +24,10 @@ public class Authenticate{
 		* <br>
 		* <b>Next Step:</b> Gather user input.
 		*/
+		while (loop = false) {
 		String user;
 		String pwd;
-
+		boolean loop = true;
 		System.out.println("Welcome, please enter username:");
 		user = keyboard.next();
 
@@ -41,5 +42,6 @@ public class Authenticate{
 			System.out.println("Welcome " + user + "!");
 		else
 			System.out.println("Wront Username or Password!");
+		}
 	}
 }
