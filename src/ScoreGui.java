@@ -52,7 +52,7 @@ public class ScoreGui implements ActionListener {
 		
 	}
 	
-	//when jbutt is pressed, information is gathered from inputs a
+	//when jbutt is pressed, information is gathered from inputs and weightedaverage is calculated
 	public void actionPerformed(ActionEvent e){
 		double weightedAverage = 0;
 		for(int x = 0; x < 4; x++){
