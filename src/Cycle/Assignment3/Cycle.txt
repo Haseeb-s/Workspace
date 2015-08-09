@@ -1,0 +1,2 @@
+The number of wheels is: 45.0
+The weight is 300.0
