@@ -10,18 +10,13 @@ public class Cycle {
         boolean pass = true;
         do {
             try {
-                Scanner scanner = new Scanner(System.in);
-                System.out.println("Enter value for numberOfWheels");
-                this.numberOfWheels = scanner.nextDouble();
-                System.out.println("Enter value for weight");
-                this.weight = scanner.nextDouble();
                 if (this.weight < 0 || this.numberOfWheels < 0) {
                     IOException x = new IOException();
                     throw x;
                 }
                 else
                     pass = false;
-            } catch (InputMismatchException | IOException e) {
+            } catch(IOException e) {
                 System.out.println("Incorrect input!");
             }
 
@@ -30,8 +25,18 @@ public class Cycle {
     }
 
     public Cycle(double numberOfWheels, double weight) {
-        this.numberOfWheels = numberOfWheels;
-        this.weight = weight;
+
+        try {
+            if (weight < 0 || numberOfWheels < 0) {
+                IOException x = new IOException();
+                throw x;
+            } else {
+                this.numberOfWheels = numberOfWheels;
+                this.weight = weight;
+            }
+        } catch (IOException e) {
+            System.out.println("Incorrect input!");
+        }
     }
 
 
