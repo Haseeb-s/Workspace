@@ -1,0 +1,36 @@
+NAME
+Steven
+Anderson
+PHONE
+123-456-7890
+ADDRESS
+1337 Elite Road
+NOTES
+Lives with mother
+NAME
+James
+Bond
+PHONE
+007-007-0007
+ADDRESS
+16 M Street
+NOTES
+Usually Travels
+NAME
+Jones
+Robert
+PHONE
+101-101-1010
+ADDRESS
+1010 Binary Lane
+NOTES
+Lives in Zimbabwe
+NAME
+Patty
+Stewart
+PHONE
+234-768-5347
+ADDRESS
+7285 Milky Way
+NOTES
+Extension 3921
