@@ -10,10 +10,8 @@ public class Main{
         abst.balanceRecursive(0,5);
         alist = abst.traversal(Order.POSTORDER);
         System.out.println(alist.toString());
-        BSTNode blt = new BSTNode("BLT");
-        blt.setParts("Bacon, Lettuce, Tomato, Bread, Cheese");
-        System.out.println(abst.contains(blt));
-        boolean found = true;
+        boolean found = abst.contains("BLT");
+        System.out.println(abst.contains("BLT"));
         if (found) {
             System.out.println(abst.search("BLT"));
         }
@@ -29,9 +27,8 @@ public class Main{
             }
 
         }
-        abst.remove("BLT");
+        System.out.println(abst.remove("BLT"));
         alist = abst.traversal(Order.POSTORDER);
-        System.out.println(alist.toString());
         //FB,HD,HC,BLT,PB
         System.out.println(alist.toString());
     }
