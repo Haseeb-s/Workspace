@@ -78,7 +78,11 @@ public class BST<T extends Comparable<T>> implements BSTInterface<T> {
     }
     @Override
     public boolean contains(T element) throws BSTUnderflowException {
-        return false;
+        String returned = search(element);
+        if (returned != null){
+            return true;
+        }
+        else{return false;}
     }
 
     @Override
@@ -200,7 +204,7 @@ public class BST<T extends Comparable<T>> implements BSTInterface<T> {
             tree.setRight(recRemove(element, tree.getRight()));
         else
         {
-           // tree = removeNode(tree);
+           tree = removeNode(tree);
             found = true;
         }
         return tree;
